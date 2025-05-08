@@ -1,0 +1,35 @@
+====================================================
+Test Case 1: Positive Login Test
+====================================================
+Step 1: Open the login page
+Step 2: Type username "student" into the Username field
+Step 3: Type password "Password123" into the Password field
+Step 4: Click the Submit button
+Step 5: Verify the new page URL contains:
+        "practicetestautomation.com/logged-in-successfully/"
+Step 6: Verify the new page contains one of the following texts:
+        - "Congratulations"
+        - "successfully logged in"
+Step 7: Verify that the "Log out" button is displayed on the new page
+
+====================================================
+Test Case 2: Negative Username Test
+====================================================
+Step 1: Open the login page
+Step 2: Type username "incorrectUser" into the Username field
+Step 3: Type password "Password123" into the Password field
+Step 4: Click the Submit button
+Step 5: Verify an error message is displayed
+Step 6: Verify the error message text is:
+        "Your username is invalid!"
+
+====================================================
+Test Case 3: Negative Password Test
+====================================================
+Step 1: Open the login page
+Step 2: Type username "student" into the Username field
+Step 3: Type password "incorrectPassword" into the Password field
+Step 4: Click the Submit button
+Step 5: Verify an error message is displayed
+Step 6: Verify the error message text is:
+        "Your password is invalid!"

@@ -1,0 +1,7 @@
+#LoginPage Locators:
+  username_input  :   //input[@id = "username"]
+  password_input  :   //input[@id = "password"]
+  submit_button   :   //button[@id = "submit"]
+
+#LoginPageSuccess Locators
+  logout_button   :   //a[text() = "Log out"]
