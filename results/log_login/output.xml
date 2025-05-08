@@ -1,340 +1,492 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.9.6 on win32)" generated="2025-05-08T17:25:41.252112" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.9.6 on win32)" generated="2025-05-08T18:48:54.410238" rpa="false" schemaversion="5">
 <suite id="s1" name="Login Testcases" source="C:\Phawat\work\practice_tester\login_practiceautomate\resource\login_testcases.robot">
-<test id="s1-t1" name="Testcase1_PositiveLogIntest" line="8">
+<test id="s1-t1" name="Testcase1_PositiveLoginTest" line="8">
 <kw name="Open to website" owner="login_keywords" type="SETUP">
 <kw name="Open Browser" owner="Selenium2Library">
-<msg time="2025-05-08T17:25:41.465200" level="INFO">Opening browser 'chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<msg time="2025-05-08T18:48:54.584279" level="INFO">Opening browser 'chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-08T17:25:41.465200" elapsed="4.779376"/>
+<status status="PASS" start="2025-05-08T18:48:54.584279" elapsed="3.974979"/>
 </kw>
 <kw name="Maximize Browser Window" owner="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-08T17:25:46.245567" elapsed="0.025002"/>
+<status status="PASS" start="2025-05-08T18:48:58.560263" elapsed="0.029989"/>
 </kw>
 <doc>Opens the browser and navigates to the specified website URL, then maximizes the browser window.</doc>
-<status status="PASS" start="2025-05-08T17:25:41.464156" elapsed="4.806413"/>
+<status status="PASS" start="2025-05-08T18:48:54.583189" elapsed="4.008064"/>
 </kw>
 <kw name="Given Login to website" owner="login_keywords">
 <kw name="Wait Until Element Is Enabled" owner="Selenium2Library">
 <arg>${username_input}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-05-08T17:25:46.273566" elapsed="0.044001"/>
+<status status="PASS" start="2025-05-08T18:48:58.591253" elapsed="0.036002"/>
 </kw>
 <kw name="Input Text" owner="Selenium2Library">
-<msg time="2025-05-08T17:25:46.318566" level="INFO">Typing text 'student' into text field '//input[@id = "username"]'.</msg>
+<msg time="2025-05-08T18:48:58.628254" level="INFO">Typing text 'student' into text field '//input[@id = "username"]'.</msg>
 <arg>${username_input}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T17:25:46.317567" elapsed="0.097001"/>
+<status status="PASS" start="2025-05-08T18:48:58.628254" elapsed="0.076997"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="Selenium2Library">
 <arg>${password_input}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-05-08T17:25:46.415569" elapsed="0.027002"/>
+<status status="PASS" start="2025-05-08T18:48:58.705251" elapsed="0.018001"/>
 </kw>
 <kw name="Input Text" owner="Selenium2Library">
-<msg time="2025-05-08T17:25:46.442571" level="INFO">Typing text 'Password123' into text field '//input[@id = "password"]'.</msg>
+<msg time="2025-05-08T18:48:58.724254" level="INFO">Typing text 'Password123' into text field '//input[@id = "password"]'.</msg>
 <arg>${password_input}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T17:25:46.442571" elapsed="0.100032"/>
+<status status="PASS" start="2025-05-08T18:48:58.723252" elapsed="0.078001"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="Selenium2Library">
 <arg>${submit_button}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-05-08T17:25:46.543594" elapsed="0.021470"/>
+<status status="PASS" start="2025-05-08T18:48:58.802253" elapsed="0.031006"/>
 </kw>
 <kw name="Click Element" owner="Selenium2Library">
-<msg time="2025-05-08T17:25:46.565586" level="INFO">Clicking element '//button[@id = "submit"]'.</msg>
+<msg time="2025-05-08T18:48:58.834251" level="INFO">Clicking element '//button[@id = "submit"]'.</msg>
 <arg>${submit_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T17:25:46.565064" elapsed="0.707505"/>
+<status status="PASS" start="2025-05-08T18:48:58.833259" elapsed="0.736305"/>
 </kw>
 <arg>student</arg>
 <arg>Password123</arg>
 <doc>Logs into the website by entering the username and password, then clicking the login button.</doc>
-<status status="PASS" start="2025-05-08T17:25:46.272571" elapsed="0.999998"/>
+<status status="PASS" start="2025-05-08T18:48:58.591253" elapsed="0.979313"/>
 </kw>
 <kw name="Then Verify new page URL after login success" owner="verify_keywords">
 <kw name="Location Should Be" owner="Selenium2Library">
-<msg time="2025-05-08T17:25:47.282969" level="INFO">Current location is 'https://practicetestautomation.com/logged-in-successfully/'.</msg>
+<msg time="2025-05-08T18:48:59.574564" level="INFO">Current location is 'https://practicetestautomation.com/logged-in-successfully/'.</msg>
 <arg>https://practicetestautomation.com/logged-in-successfully/</arg>
 <doc>Verifies that the current URL is exactly ``url``.</doc>
-<status status="PASS" start="2025-05-08T17:25:47.274294" elapsed="0.008675"/>
+<status status="PASS" start="2025-05-08T18:48:59.570566" elapsed="0.003998"/>
 </kw>
 <doc>Verifies that the current URL after a successful login matches the expected URL.</doc>
-<status status="PASS" start="2025-05-08T17:25:47.273618" elapsed="0.009887"/>
+<status status="PASS" start="2025-05-08T18:48:59.570566" elapsed="0.003998"/>
 </kw>
 <kw name="And Verify new page contains expected text after login success" owner="verify_keywords">
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Page Should Contain" owner="Selenium2Library">
-<msg time="2025-05-08T17:25:47.305459" level="INFO">Current page contains text 'Congratulations'.</msg>
+<msg time="2025-05-08T18:48:59.595573" level="INFO">Current page contains text 'Congratulations'.</msg>
 <arg>Congratulations</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-05-08T17:25:47.284566" elapsed="0.021449"/>
+<status status="PASS" start="2025-05-08T18:48:59.575563" elapsed="0.020010"/>
 </kw>
-<msg time="2025-05-08T17:25:47.306558" level="INFO">${congrat_text} = ('PASS', None)</msg>
+<msg time="2025-05-08T18:48:59.596580" level="INFO">${congrat_text} = ('PASS', None)</msg>
 <var>${congrat_text}</var>
 <arg>Page Should Contain</arg>
 <arg>Congratulations</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-05-08T17:25:47.284566" elapsed="0.022531"/>
+<status status="PASS" start="2025-05-08T18:48:59.575563" elapsed="0.021017"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Page Should Contain" owner="Selenium2Library">
-<msg time="2025-05-08T17:25:47.328156" level="INFO">Current page contains text 'successfully logged in'.</msg>
+<msg time="2025-05-08T18:48:59.610563" level="INFO">Current page contains text 'successfully logged in'.</msg>
 <arg>successfully logged in</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-05-08T17:25:47.308703" elapsed="0.019845"/>
+<status status="PASS" start="2025-05-08T18:48:59.597566" elapsed="0.012997"/>
 </kw>
-<msg time="2025-05-08T17:25:47.328548" level="INFO">${success_text} = ('PASS', None)</msg>
+<msg time="2025-05-08T18:48:59.611582" level="INFO">${success_text} = ('PASS', None)</msg>
 <var>${success_text}</var>
 <arg>Page Should Contain</arg>
 <arg>successfully logged in</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-05-08T17:25:47.308136" elapsed="0.020412"/>
+<status status="PASS" start="2025-05-08T18:48:59.596580" elapsed="0.015002"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-05-08T17:25:47.329079" level="INFO">${congrat_status} = PASS</msg>
+<msg time="2025-05-08T18:48:59.611582" level="INFO">${congrat_status} = PASS</msg>
 <var>${congrat_status}</var>
 <arg>${congrat_text}[0]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-05-08T17:25:47.328548" elapsed="0.000531"/>
+<status status="PASS" start="2025-05-08T18:48:59.611582" elapsed="0.000000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-05-08T17:25:47.329602" level="INFO">${success_status} = PASS</msg>
+<msg time="2025-05-08T18:48:59.612584" level="INFO">${success_status} = PASS</msg>
 <var>${success_status}</var>
 <arg>${success_text}[0]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-05-08T17:25:47.329602" elapsed="0.000000"/>
+<status status="PASS" start="2025-05-08T18:48:59.611582" elapsed="0.001002"/>
 </kw>
 <if>
 <branch type="IF" condition="'${congrat_status}' == 'PASS'">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-08T17:25:47.330163" level="INFO">expected Congratulations text is shown</msg>
+<msg time="2025-05-08T18:48:59.612584" level="INFO">expected Congratulations text is shown</msg>
 <arg>expected Congratulations text is shown</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-08T17:25:47.330163" elapsed="0.000518"/>
+<status status="PASS" start="2025-05-08T18:48:59.612584" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-05-08T17:25:47.330163" elapsed="0.000553"/>
+<status status="PASS" start="2025-05-08T18:48:59.612584" elapsed="0.000000"/>
 </branch>
 <branch type="ELSE IF" condition="'${success_status}' == 'PASS'">
 <kw name="Log" owner="BuiltIn">
 <arg>expected 'successfully logged in' text is shown</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2025-05-08T17:25:47.330716" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-05-08T18:48:59.612584" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2025-05-08T17:25:47.330716" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-05-08T18:48:59.612584" elapsed="0.000000"/>
 </branch>
 <branch type="ELSE">
 <kw name="Fail" owner="BuiltIn">
 <arg>Neither 'Congratulations' nor 'successfully logged in' was found.</arg>
 <doc>Fails the test with the given message and optionally alters its tags.</doc>
-<status status="NOT RUN" start="2025-05-08T17:25:47.330716" elapsed="0.000536"/>
+<status status="NOT RUN" start="2025-05-08T18:48:59.612584" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2025-05-08T17:25:47.330716" elapsed="0.000536"/>
+<status status="NOT RUN" start="2025-05-08T18:48:59.612584" elapsed="0.000000"/>
 </branch>
-<status status="PASS" start="2025-05-08T17:25:47.330163" elapsed="0.001089"/>
+<status status="PASS" start="2025-05-08T18:48:59.612584" elapsed="0.000000"/>
 </if>
 <doc>Verifies the presence of either 'Congratulations' or 'successfully logged in' text on the page after login.</doc>
-<status status="PASS" start="2025-05-08T17:25:47.284024" elapsed="0.047228"/>
+<status status="PASS" start="2025-05-08T18:48:59.575563" elapsed="0.038100"/>
 </kw>
 <kw name="When Logout from website" owner="login_keywords">
 <kw name="Wait Until Element Is Enabled" owner="Selenium2Library">
 <arg>${logout_button}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-05-08T17:25:47.332294" elapsed="0.017036"/>
+<status status="PASS" start="2025-05-08T18:48:59.614567" elapsed="0.023003"/>
 </kw>
 <kw name="Click Element" owner="Selenium2Library">
-<msg time="2025-05-08T17:25:47.350330" level="INFO">Clicking element '//a[text() = "Log out"]'.</msg>
+<msg time="2025-05-08T18:48:59.638563" level="INFO">Clicking element '//a[text() = "Log out"]'.</msg>
 <arg>${logout_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T17:25:47.349330" elapsed="0.478833"/>
+<status status="PASS" start="2025-05-08T18:48:59.638563" elapsed="0.156013"/>
 </kw>
 <doc>Logs out of the website by clicking the logout button after ensuring it is enabled.</doc>
-<status status="PASS" start="2025-05-08T17:25:47.331780" elapsed="0.496383"/>
+<status status="PASS" start="2025-05-08T18:48:59.613663" elapsed="0.181902"/>
 </kw>
 <kw name="Then Verify new page URL after logout" owner="verify_keywords">
 <kw name="Location Should Be" owner="Selenium2Library">
-<msg time="2025-05-08T17:25:47.834162" level="INFO">Current location is 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<msg time="2025-05-08T18:48:59.800564" level="INFO">Current location is 'https://practicetestautomation.com/practice-test-login/'.</msg>
 <arg>https://practicetestautomation.com/practice-test-login/</arg>
 <doc>Verifies that the current URL is exactly ``url``.</doc>
-<status status="PASS" start="2025-05-08T17:25:47.829183" elapsed="0.004979"/>
+<status status="PASS" start="2025-05-08T18:48:59.796565" elapsed="0.003999"/>
 </kw>
 <doc>Verifies that the current URL after logging out matches the expected login page URL.</doc>
-<status status="PASS" start="2025-05-08T17:25:47.829183" elapsed="0.004979"/>
+<status status="PASS" start="2025-05-08T18:48:59.795565" elapsed="0.004999"/>
 </kw>
 <kw name="Close Browser" owner="Selenium2Library" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-08T17:25:47.835164" elapsed="2.137852"/>
+<status status="PASS" start="2025-05-08T18:48:59.801565" elapsed="2.135972"/>
 </kw>
-<tag>Positivetest</tag>
-<status status="PASS" start="2025-05-08T17:25:41.463194" elapsed="8.510750"/>
+<doc>Verify successful login, check expected URL and text, then logout and verify redirected URL.</doc>
+<tag>PositiveTest</tag>
+<status status="PASS" start="2025-05-08T18:48:54.582578" elapsed="7.355897"/>
 </test>
-<test id="s1-t2" name="Testcase2_Negativeusernametest" line="17">
+<test id="s1-t2" name="Testcase2_NegativeUsernameTest" line="17">
 <kw name="Open to website" owner="login_keywords" type="SETUP">
 <kw name="Open Browser" owner="Selenium2Library">
-<msg time="2025-05-08T17:25:49.978934" level="INFO">Opening browser 'chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<msg time="2025-05-08T18:49:01.941467" level="INFO">Opening browser 'chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-08T17:25:49.978934" elapsed="4.682494"/>
+<status status="PASS" start="2025-05-08T18:49:01.941467" elapsed="4.223460"/>
 </kw>
 <kw name="Maximize Browser Window" owner="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-08T17:25:54.662426" elapsed="0.023128"/>
+<status status="PASS" start="2025-05-08T18:49:06.164927" elapsed="0.032001"/>
 </kw>
 <doc>Opens the browser and navigates to the specified website URL, then maximizes the browser window.</doc>
-<status status="PASS" start="2025-05-08T17:25:49.978012" elapsed="4.707542"/>
+<status status="PASS" start="2025-05-08T18:49:01.941467" elapsed="4.256461"/>
 </kw>
 <kw name="Given Login to website" owner="login_keywords">
 <kw name="Wait Until Element Is Enabled" owner="Selenium2Library">
 <arg>${username_input}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-05-08T17:25:54.689562" elapsed="0.041991"/>
+<status status="PASS" start="2025-05-08T18:49:06.200926" elapsed="0.036000"/>
 </kw>
 <kw name="Input Text" owner="Selenium2Library">
-<msg time="2025-05-08T17:25:54.734551" level="INFO">Typing text 'incorrectUser' into text field '//input[@id = "username"]'.</msg>
+<msg time="2025-05-08T18:49:06.236926" level="INFO">Typing text 'incorrectUser' into text field '//input[@id = "username"]'.</msg>
 <arg>${username_input}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T17:25:54.733552" elapsed="0.091998"/>
+<status status="PASS" start="2025-05-08T18:49:06.236926" elapsed="0.073007"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="Selenium2Library">
 <arg>${password_input}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-05-08T17:25:54.826554" elapsed="0.023998"/>
+<status status="PASS" start="2025-05-08T18:49:06.310928" elapsed="0.020997"/>
 </kw>
 <kw name="Input Text" owner="Selenium2Library">
-<msg time="2025-05-08T17:25:54.851571" level="INFO">Typing text 'Password123' into text field '//input[@id = "password"]'.</msg>
+<msg time="2025-05-08T18:49:06.332926" level="INFO">Typing text 'Password123' into text field '//input[@id = "password"]'.</msg>
 <arg>${password_input}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T17:25:54.850552" elapsed="0.070002"/>
+<status status="PASS" start="2025-05-08T18:49:06.332926" elapsed="0.065999"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="Selenium2Library">
 <arg>${submit_button}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-05-08T17:25:54.921567" elapsed="0.017988"/>
+<status status="PASS" start="2025-05-08T18:49:06.399926" elapsed="0.020999"/>
 </kw>
 <kw name="Click Element" owner="Selenium2Library">
-<msg time="2025-05-08T17:25:54.939555" level="INFO">Clicking element '//button[@id = "submit"]'.</msg>
+<msg time="2025-05-08T18:49:06.420925" level="INFO">Clicking element '//button[@id = "submit"]'.</msg>
 <arg>${submit_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T17:25:54.939555" elapsed="0.046996"/>
+<status status="PASS" start="2025-05-08T18:49:06.420925" elapsed="0.049002"/>
 </kw>
 <arg>incorrectUser</arg>
 <arg>Password123</arg>
 <doc>Logs into the website by entering the username and password, then clicking the login button.</doc>
-<status status="PASS" start="2025-05-08T17:25:54.687561" elapsed="0.300002"/>
+<status status="PASS" start="2025-05-08T18:49:06.199930" elapsed="0.269997"/>
 </kw>
 <kw name="Then Verify error message text when username incorrect" owner="verify_keywords">
 <kw name="Page Should Contain" owner="Selenium2Library">
-<msg time="2025-05-08T17:25:55.000551" level="INFO">Current page contains text 'Your username is invalid!'.</msg>
+<msg time="2025-05-08T18:49:06.482926" level="INFO">Current page contains text 'Your username is invalid!'.</msg>
 <arg>Your username is invalid!</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-05-08T17:25:54.990557" elapsed="0.009994"/>
+<status status="PASS" start="2025-05-08T18:49:06.470926" elapsed="0.012000"/>
 </kw>
 <doc>Verifies the error message shown when an invalid username is entered.</doc>
-<status status="PASS" start="2025-05-08T17:25:54.989556" elapsed="0.011996"/>
+<status status="PASS" start="2025-05-08T18:49:06.469927" elapsed="0.012999"/>
 </kw>
 <kw name="Close Browser" owner="Selenium2Library" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-08T17:25:55.001552" elapsed="2.147564"/>
+<status status="PASS" start="2025-05-08T18:49:06.483928" elapsed="2.117932"/>
 </kw>
-<tag>Negativetes</tag>
-<status status="PASS" start="2025-05-08T17:25:49.976963" elapsed="7.173020"/>
+<doc>Attempt login with an incorrect username and verify the appropriate error message.</doc>
+<tag>NegativeTest</tag>
+<status status="PASS" start="2025-05-08T18:49:01.940467" elapsed="6.662396"/>
 </test>
-<test id="s1-t3" name="Testcase3_Negativepasswordtest" line="23">
+<test id="s1-t3" name="Testcase3_NegativePasswordTest" line="23">
 <kw name="Open to website" owner="login_keywords" type="SETUP">
 <kw name="Open Browser" owner="Selenium2Library">
-<msg time="2025-05-08T17:25:57.156071" level="INFO">Opening browser 'chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<msg time="2025-05-08T18:49:08.608853" level="INFO">Opening browser 'chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-08T17:25:57.155069" elapsed="4.876240"/>
+<status status="PASS" start="2025-05-08T18:49:08.608853" elapsed="3.978791"/>
 </kw>
 <kw name="Maximize Browser Window" owner="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-08T17:26:02.032327" elapsed="0.033010"/>
+<status status="PASS" start="2025-05-08T18:49:12.588704" elapsed="0.025939"/>
 </kw>
 <doc>Opens the browser and navigates to the specified website URL, then maximizes the browser window.</doc>
-<status status="PASS" start="2025-05-08T17:25:57.155069" elapsed="4.911267"/>
+<status status="PASS" start="2025-05-08T18:49:08.607793" elapsed="4.006850"/>
 </kw>
 <kw name="Given Login to website" owner="login_keywords">
 <kw name="Wait Until Element Is Enabled" owner="Selenium2Library">
 <arg>${username_input}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-05-08T17:26:02.067311" elapsed="0.046995"/>
+<status status="PASS" start="2025-05-08T18:49:12.615641" elapsed="0.032018"/>
 </kw>
 <kw name="Input Text" owner="Selenium2Library">
-<msg time="2025-05-08T17:26:02.115305" level="INFO">Typing text 'student' into text field '//input[@id = "username"]'.</msg>
+<msg time="2025-05-08T18:49:12.650648" level="INFO">Typing text 'student' into text field '//input[@id = "username"]'.</msg>
 <arg>${username_input}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T17:26:02.114306" elapsed="0.087000"/>
+<status status="PASS" start="2025-05-08T18:49:12.649641" elapsed="0.077000"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="Selenium2Library">
 <arg>${password_input}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-05-08T17:26:02.201306" elapsed="0.023000"/>
+<status status="PASS" start="2025-05-08T18:49:12.726641" elapsed="0.018999"/>
 </kw>
 <kw name="Input Text" owner="Selenium2Library">
-<msg time="2025-05-08T17:26:02.224306" level="INFO">Typing text 'incorrectPassword' into text field '//input[@id = "password"]'.</msg>
+<msg time="2025-05-08T18:49:12.746641" level="INFO">Typing text 'incorrectPassword' into text field '//input[@id = "password"]'.</msg>
 <arg>${password_input}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T17:26:02.224306" elapsed="0.078005"/>
+<status status="PASS" start="2025-05-08T18:49:12.746641" elapsed="0.067999"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="Selenium2Library">
 <arg>${submit_button}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-05-08T17:26:02.302311" elapsed="0.029749"/>
+<status status="PASS" start="2025-05-08T18:49:12.814640" elapsed="0.021000"/>
 </kw>
 <kw name="Click Element" owner="Selenium2Library">
-<msg time="2025-05-08T17:26:02.332604" level="INFO">Clicking element '//button[@id = "submit"]'.</msg>
+<msg time="2025-05-08T18:49:12.836642" level="INFO">Clicking element '//button[@id = "submit"]'.</msg>
 <arg>${submit_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T17:26:02.332604" elapsed="0.049716"/>
+<status status="PASS" start="2025-05-08T18:49:12.835640" elapsed="0.049000"/>
 </kw>
 <arg>student</arg>
 <arg>incorrectPassword</arg>
 <doc>Logs into the website by entering the username and password, then clicking the login button.</doc>
-<status status="PASS" start="2025-05-08T17:26:02.067311" elapsed="0.315009"/>
+<status status="PASS" start="2025-05-08T18:49:12.615641" elapsed="0.268999"/>
 </kw>
 <kw name="Then Verify error message text when password incorrect" owner="verify_keywords">
 <kw name="Page Should Contain" owner="Selenium2Library">
-<msg time="2025-05-08T17:26:02.399316" level="INFO">Current page contains text 'Your password is invalid!'.</msg>
+<msg time="2025-05-08T18:49:12.897639" level="INFO">Current page contains text 'Your password is invalid!'.</msg>
 <arg>Your password is invalid!</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-05-08T17:26:02.383317" elapsed="0.015999"/>
+<status status="PASS" start="2025-05-08T18:49:12.885640" elapsed="0.011999"/>
 </kw>
 <doc>Verifies the error message shown when an invalid password is entered.</doc>
-<status status="PASS" start="2025-05-08T17:26:02.383317" elapsed="0.015999"/>
+<status status="PASS" start="2025-05-08T18:49:12.885640" elapsed="0.011999"/>
 </kw>
 <kw name="Close Browser" owner="Selenium2Library" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-08T17:26:02.399316" elapsed="2.178491"/>
+<status status="PASS" start="2025-05-08T18:49:12.898643" elapsed="2.138811"/>
 </kw>
-<tag>Negativetest</tag>
-<status status="PASS" start="2025-05-08T17:25:57.153989" elapsed="7.424353"/>
+<doc>Attempt login with an incorrect password and verify the appropriate error message.</doc>
+<tag>NegativeTest</tag>
+<status status="PASS" start="2025-05-08T18:49:08.606778" elapsed="6.431595"/>
 </test>
-<status status="PASS" start="2025-05-08T17:25:41.254114" elapsed="23.325822"/>
+<test id="s1-t4" name="Testcase4_NegativeUsernameandPasswordTest" line="30">
+<kw name="Open to website" owner="login_keywords" type="SETUP">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2025-05-08T18:49:15.045448" level="INFO">Opening browser 'chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-08T18:49:15.044444" elapsed="3.897412"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-08T18:49:18.941856" elapsed="0.040021"/>
+</kw>
+<doc>Opens the browser and navigates to the specified website URL, then maximizes the browser window.</doc>
+<status status="PASS" start="2025-05-08T18:49:15.043408" elapsed="3.938469"/>
+</kw>
+<kw name="Given Login to website" owner="login_keywords">
+<kw name="Wait Until Element Is Enabled" owner="Selenium2Library">
+<arg>${username_input}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-05-08T18:49:18.982860" elapsed="0.048077"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2025-05-08T18:49:19.031955" level="INFO">Typing text 'incorrectUser' into text field '//input[@id = "username"]'.</msg>
+<arg>${username_input}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T18:49:19.030937" elapsed="0.072002"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="Selenium2Library">
+<arg>${password_input}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-05-08T18:49:19.103938" elapsed="0.019001"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2025-05-08T18:49:19.123954" level="INFO">Typing text 'incorrectPassword' into text field '//input[@id = "password"]'.</msg>
+<arg>${password_input}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T18:49:19.122939" elapsed="0.072999"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="Selenium2Library">
+<arg>${submit_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-05-08T18:49:19.195938" elapsed="0.016999"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2025-05-08T18:49:19.212937" level="INFO">Clicking element '//button[@id = "submit"]'.</msg>
+<arg>${submit_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T18:49:19.212937" elapsed="0.051016"/>
+</kw>
+<arg>incorrectUser</arg>
+<arg>incorrectPassword</arg>
+<doc>Logs into the website by entering the username and password, then clicking the login button.</doc>
+<status status="PASS" start="2025-05-08T18:49:18.982860" elapsed="0.281093"/>
+</kw>
+<kw name="Then Verify error message text when username incorrect" owner="verify_keywords">
+<kw name="Page Should Contain" owner="Selenium2Library">
+<msg time="2025-05-08T18:49:19.274936" level="INFO">Current page contains text 'Your username is invalid!'.</msg>
+<arg>Your username is invalid!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-05-08T18:49:19.264937" elapsed="0.009999"/>
+</kw>
+<doc>Verifies the error message shown when an invalid username is entered.</doc>
+<status status="PASS" start="2025-05-08T18:49:19.263953" elapsed="0.010983"/>
+</kw>
+<kw name="Close Browser" owner="Selenium2Library" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-08T18:49:19.274936" elapsed="2.127660"/>
+</kw>
+<doc>Attempt login with incorrect username and incorrect password, and verify the appropriate error message is shown.</doc>
+<tag>NegativeTest</tag>
+<status status="PASS" start="2025-05-08T18:49:15.042372" elapsed="6.361198"/>
+</test>
+<test id="s1-t5" name="Testcase5_NegativeBlankUsernamePasswordTest" line="37">
+<kw name="Open to website" owner="login_keywords" type="SETUP">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2025-05-08T18:49:21.410587" level="INFO">Opening browser 'chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-08T18:49:21.409580" elapsed="4.088187"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-08T18:49:25.497767" elapsed="0.027000"/>
+</kw>
+<doc>Opens the browser and navigates to the specified website URL, then maximizes the browser window.</doc>
+<status status="PASS" start="2025-05-08T18:49:21.408656" elapsed="4.116111"/>
+</kw>
+<kw name="Given Login to website" owner="login_keywords">
+<kw name="Wait Until Element Is Enabled" owner="Selenium2Library">
+<arg>${username_input}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-05-08T18:49:25.528769" elapsed="0.039996"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2025-05-08T18:49:25.568765" level="INFO">Typing text '' into text field '//input[@id = "username"]'.</msg>
+<arg>${username_input}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T18:49:25.568765" elapsed="0.072002"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="Selenium2Library">
+<arg>${password_input}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-05-08T18:49:25.640767" elapsed="0.018001"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2025-05-08T18:49:25.658768" level="INFO">Typing text '' into text field '//input[@id = "password"]'.</msg>
+<arg>${password_input}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T18:49:25.658768" elapsed="0.059009"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="Selenium2Library">
+<arg>${submit_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-05-08T18:49:25.718766" elapsed="0.017999"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2025-05-08T18:49:25.737767" level="INFO">Clicking element '//button[@id = "submit"]'.</msg>
+<arg>${submit_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T18:49:25.737767" elapsed="0.048000"/>
+</kw>
+<arg>${EMPTY}</arg>
+<arg>${EMPTY}</arg>
+<doc>Logs into the website by entering the username and password, then clicking the login button.</doc>
+<status status="PASS" start="2025-05-08T18:49:25.525766" elapsed="0.260001"/>
+</kw>
+<kw name="Then Verify error message text when username incorrect" owner="verify_keywords">
+<kw name="Page Should Contain" owner="Selenium2Library">
+<msg time="2025-05-08T18:49:25.797766" level="INFO">Current page contains text 'Your username is invalid!'.</msg>
+<arg>Your username is invalid!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-05-08T18:49:25.786768" elapsed="0.010998"/>
+</kw>
+<doc>Verifies the error message shown when an invalid username is entered.</doc>
+<status status="PASS" start="2025-05-08T18:49:25.786768" elapsed="0.010998"/>
+</kw>
+<kw name="Close Browser" owner="Selenium2Library" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-08T18:49:25.797766" elapsed="2.141891"/>
+</kw>
+<doc>Attempt login with blank username and password, and verify the appropriate error message is shown.</doc>
+<tag>NegativeTest</tag>
+<status status="PASS" start="2025-05-08T18:49:21.407572" elapsed="6.533001"/>
+</test>
+<status status="PASS" start="2025-05-08T18:48:54.412239" elapsed="33.532406"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">Negativetes</stat>
-<stat pass="1" fail="0" skip="0">Negativetest</stat>
-<stat pass="1" fail="0" skip="0">Positivetest</stat>
+<stat pass="4" fail="0" skip="0">NegativeTest</stat>
+<stat pass="1" fail="0" skip="0">PositiveTest</stat>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Login Testcases">Login Testcases</stat>
+<stat pass="5" fail="0" skip="0" id="s1" name="Login Testcases">Login Testcases</stat>
 </suite>
 </statistics>
 <errors>

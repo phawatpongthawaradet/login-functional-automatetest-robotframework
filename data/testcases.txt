@@ -33,3 +33,25 @@ Step 4: Click the Submit button
 Step 5: Verify an error message is displayed
 Step 6: Verify the error message text is:
         "Your password is invalid!"
+
+====================================================
+Test Case 4: Negative Username and Password Test
+====================================================
+Step 1: Open the login page  
+Step 2: Type username "incorrectUser" into the Username field  
+Step 3: Type password "incorrectPassword" into the Password field  
+Step 4: Click the Submit button  
+Step 5: Verify an error message is displayed  
+Step 6: Verify the error message text is:  
+        "Your username is invalid!"  
+
+====================================================
+Test Case 5: Negative Blank Username and Password Test
+====================================================
+Step 1: Open the login page  
+Step 2: Leave the Username field blank  
+Step 3: Leave the Password field blank  
+Step 4: Click the Submit button  
+Step 5: Verify an error message is displayed  
+Step 6: Verify the error message text is:  
+        "Your username is invalid!"  

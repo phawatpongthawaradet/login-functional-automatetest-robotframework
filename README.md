@@ -44,6 +44,17 @@ All test scenarios are documented in `Data/testcases.txt`. The following scenari
    ✔️ Error message display  
    ✔️ Text matches expected
 
+4. **Negative Username and Password Test**  
+   ❌ Invalid username and password  
+   ✔️ Error message display  
+   ✔️ Text matches expected (username error)
+
+5. **Negative Blank Username and Password Test**  
+   ❌ Blank username and password  
+   ✔️ Error message display  
+   ✔️ Text matches expected (username error)
+
+
 ---
 
 ## 🚀 How to Run the Tests

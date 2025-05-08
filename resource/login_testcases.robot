@@ -26,6 +26,21 @@ Testcase3_NegativePasswordTest
     Given Login to website    student    incorrectPassword
     Then Verify error message text when password incorrect
 
+
+Testcase4_NegativeUsernameandPasswordTest
+    [Documentation]    Attempt login with incorrect username and incorrect password, and verify the appropriate error message is shown.
+    [Tags]    NegativeTest
+    Given Login to website    incorrectUser    incorrectPassword
+    Then Verify error message text when username incorrect
+
+
+Testcase5_NegativeBlankUsernamePasswordTest
+    [Documentation]    Attempt login with blank username and password, and verify the appropriate error message is shown.
+    [Tags]    NegativeTest
+    Given Login to website    ${EMPTY}    ${EMPTY}
+    Then Verify error message text when username incorrect
+
+
     
 
 
